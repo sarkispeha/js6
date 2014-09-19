@@ -1,0 +1,12 @@
+.main-container {
+	width:80%;
+	padding: 2em;
+}
+
+form {
+	text-align: right;
+}
+
+form input {
+	margin: 1%;
+}
