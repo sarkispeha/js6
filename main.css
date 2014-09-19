@@ -3,8 +3,18 @@
 	padding: 2em;
 }
 
-form {
+.user-input {
+	display: none;
+}
+
+.user-input-show {
+	display: block;
+}
+
+
+.user-input form {
 	text-align: right;
+
 }
 
 form input {

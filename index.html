@@ -10,25 +10,28 @@
 
 <div class="main-container">
 
-	<form>
+	<form class="user-input">
 		username :<input type="text" name="username"><br>
 		about you:<input type="text" name="bio"><br>
 		favorite books:<input type="text" name="favbooks"><br>
 		favorite Javascript libraries:<input type="text" name="favjava">
-	</form>
+	
 
 	<button class="userSubmit">Submit</button>
+	</form>
+	
+	<div class="user-profile">	
+		<h3>Username:</h3>
+			<p id="username"></p>
+		<h3>bio</h3>
+			<p id="bio"></p>
+		<h3>favorite books</h3>
+			<p id="favbooks"></p>
+		<h3>favorite Javascript</h3>
+			<p id="favjava"></p>
 
-	<p id="username"></p>
-	<p id="bio"></p>
-	<p id="favbooks"></p>
-	<p id="favjava"></p>
-
-	<title>Username:</title>
-	<title>bio</title>
-	<title>favorite books</title>
-	<title>favorite Javascript</title>
-
+		<button>Show Form</button>
+	</div>
 
 
 

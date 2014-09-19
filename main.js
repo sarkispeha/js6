@@ -1,21 +1,28 @@
 $(document).on('ready', function() {
 
+var user = '';
+var bio = '';
+var favbooks = '';
+var favjava = '';
 
+	$(document).on('click', '.user-profile button', function(){
+		console.log('works');
+	 	$(this).text('Hide Form');
+		$('.user-input').toggleClass('user-input-show');
+	})
 
-	$(document).on('click', '.userSubmit', function() {
-		var value = $('form input[name="username"]').val();
-		console.log(value);
+	$(document).on('click', '.userSubmit', function(e) {
+		e.preventDefault();
+		var user = $('form input[name="username"]').val();
 		var bio = $('form input[name="bio"]').val();
-		console.log(bio);
 		var favbooks = $('form input[name="favbooks"]').val();
-		console.log(favbooks);
 		var favjava = $('form input[name="favjava"]').val();
-		console.log(favjava);
-	
-	
 
-
-	});
+		$('#username').append(user);
+		$('#bio').append(bio);
+		$('#favbooks').append(favbooks);
+		$('#favjava').append(favjava);
+		});
 
 
   
